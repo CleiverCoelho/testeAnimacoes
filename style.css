@@ -1,0 +1,119 @@
+body{
+    background-color: darkgoldenrod;
+}
+
+.containers {
+  width: 450px;
+  overflow-x: hidden;
+}
+
+.container-frames{
+  width: 1000px;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column; */
+  height: 20rem;
+  gap: 1rem;
+}
+
+.projeto{
+  width: 100px;
+  height: 150px;
+  flex: 1;
+  background-color: antiquewhite; 
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s cubic-bezier(0.25, 0.46, 0.45, 1.4) 
+
+}
+
+.projeto:hover, .box:hover {
+  flex: 2;
+  width: 3000px;
+  height: 200px;
+  /* background: rgba(253, 247, 247, 0.5); */
+}
+
+.container-projetos{
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.botao {
+    width: 30px;
+    height: 10px;
+}
+
+.container {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 1000px;
+    height: 1000px;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .box {
+    flex: 1;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+
+    background-color: antiquewhite; 
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(0.25, 0.46, 0.45, 1.4)
+
+  }
+  
+  .projeto:nth-child(1) {
+    left: 0;
+  }
+  
+  .projeto:nth-child(2) {
+    left: 120px;
+    /* background-color: aqua; */
+  }
+  
+  .projeto:nth-child(3) {
+    left: 240px;
+    /* background-color: black; */
+  }
+  
+  .projeto:nth-child(4) {
+    left: 360px;
+  }
+  
+  .projeto.active {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+
+  #next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  
+#next-btn:hover {
+    background-color: navy;
+  } 
+  
